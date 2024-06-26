@@ -1,3 +1,4 @@
+
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -22,7 +23,7 @@ class TestStellarBurgersLogIn:
         WebDriverWait(driver, 3).until(
             expected_conditions.visibility_of_element_located(Locators.ELEMENT_PERSONAL_ACCOUNT))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/account/profile'
+        assert driver.current_url == Constants.URL_PROFILE
 
         driver.find_element(*Locators.LOGOUT_BUTTON).click()
         WebDriverWait(driver, 3).until(
@@ -43,7 +44,7 @@ class TestStellarBurgersLogIn:
         WebDriverWait(driver, 3).until(
             expected_conditions.visibility_of_element_located(Locators.ELEMENT_PERSONAL_ACCOUNT))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/account/profile'
+        assert driver.current_url == Constants.URL_PROFILE
 
         driver.find_element(*Locators.LOGOUT_BUTTON).click()
         WebDriverWait(driver, 3).until(
@@ -70,7 +71,7 @@ class TestStellarBurgersLogIn:
         WebDriverWait(driver, 5).until(
             expected_conditions.visibility_of_element_located(Locators.ELEMENT_PERSONAL_ACCOUNT))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/account/profile'
+        assert driver.current_url == Constants.URL_PROFILE
 
         driver.find_element(*Locators.LOGOUT_BUTTON).click()
         WebDriverWait(driver, 3).until(
@@ -97,7 +98,7 @@ class TestStellarBurgersLogIn:
         WebDriverWait(driver, 5).until(
             expected_conditions.visibility_of_element_located(Locators.ELEMENT_PERSONAL_ACCOUNT))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/account/profile'
+        assert driver.current_url == Constants.URL_PROFILE
 
         driver.find_element(*Locators.LOGOUT_BUTTON).click()
         WebDriverWait(driver, 3).until(

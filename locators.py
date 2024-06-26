@@ -28,3 +28,7 @@ class Locators:
     TITLE_BREAD = (By.XPATH, "//h2[text()='Булки']")  # заголовок Булки
     TITLE_FILLING = (By.XPATH, "//h2[text()='Начинки']")  # заголовок Начинки
     TITLE_SAUCES = (By.XPATH, "//h2[text()='Соусы']")  # заголовок Соусы
+    FIELD_USER_NAME = (By.XPATH, ".//input[@name='Name']") # поле Имя в личном кабинете
+    FIELD_USER_EMAIL = (By.XPATH, ".//input[@name='name']") # поле Email в личном кабинете
+    FIELD_USER_PASSWORD = (By.XPATH, ".//input[@type='password']") # поле Пароль в личном кабинете
+    POP_UP_TEXT_ERROR = (By.XPATH, "//p[text()='Некорректный пароль']") # текст всплывающей ошибки Некорректный пароль
