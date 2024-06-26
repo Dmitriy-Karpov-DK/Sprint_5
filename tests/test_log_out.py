@@ -23,4 +23,4 @@ class TestStellarBurgersLogOut:
         WebDriverWait(driver, 3).until(
             expected_conditions.visibility_of_element_located(Locators.LOGIN_BUTTON))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/login'
+        assert driver.current_url == Constants.URL_LOGIN

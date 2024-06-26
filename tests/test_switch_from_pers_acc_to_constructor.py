@@ -22,7 +22,7 @@ class TestStellarBurgersPersAccount:
         driver.find_element(*Locators.TITLE_CONSTRUCTOR).click()
         WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(Locators.CONSTRUCTOR_ELEMENT))
 
-        assert driver.current_url == "https://stellarburgers.nomoreparties.site/"
+        assert driver.current_url == Constants.URL
 
     def test_switch_from_pers_acc_to_constructor_clik_on_logo_stellar_succesful(self, driver):
         driver.find_element(*Locators.ACCOUNT_LOGIN_BUTTON).click()
@@ -39,4 +39,4 @@ class TestStellarBurgersPersAccount:
         driver.find_element(*Locators.TITLE_STELLAR_BURGERS).click()
         WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(Locators.CONSTRUCTOR_ELEMENT))
 
-        assert driver.current_url == "https://stellarburgers.nomoreparties.site/"
+        assert driver.current_url == Constants.URL

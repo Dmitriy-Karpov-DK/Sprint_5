@@ -20,4 +20,4 @@ class TestStellarBurgersPersAccount:
         WebDriverWait(driver, 3).until(
             expected_conditions.visibility_of_element_located(Locators.INPUT_ELEMENT))
 
-        assert "https://stellarburgers.nomoreparties.site/account/profile" == driver.current_url
+        assert Constants.URL_PROFILE == driver.current_url
